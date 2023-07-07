@@ -9,8 +9,9 @@
     <script src='login.js'></script>
 </head>
 <body>
-    <h1>Login</h1>
-    <form method='post' action=''>
+    <div id="border">
+        <h1>Login</h1>
+     <form method='post' action=''>
         <p>
             <label for='email'>E-mail:</label>
             <input type='email' id='email' name='email' placeholder="seunome@dominio.com"><br>
@@ -20,7 +21,8 @@
             <input type='password' id='password'>
         </p>
         <p>
-            <button class="btn" onclick="Validar()">Entrar</button>
+            <button class="btn" onclick="Validar(); return false;" class="btn btn-warning">Entrar</button>
         </p>
+    </div>
 </body>
 </html>

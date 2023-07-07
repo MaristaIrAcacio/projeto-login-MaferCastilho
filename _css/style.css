@@ -3,7 +3,19 @@
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
-    transition: background .3s;
+    /* transition: background .3s; */
     border-radius: 5px;
     background-color: rgb(145, 231, 231);
+}
+form{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+#border{
+    width: 700px;
+    border: 1px solid rgb(216, 160, 213);
+    width: 300px;
+    margin-left: 500px;
 }
