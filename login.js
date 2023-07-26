@@ -28,9 +28,14 @@ function Validar(){
 
         // LAÇO DE REPETIÇÃO PARA COLOCAR NOMES NA TABELA
         for(let i=0;i <= (dadosLista.length-1);i++){
-            tabela += "<tr><td>"  + dadosLista[i] + "</td><td><button class='btn btn-success' onclick=''>Editar</button><button class='btn btn-danger' onclick=''>Excluir</button></td></tr>";
+            tabela += "<tr><td>"  + dadosLista[i] + "</td><td><button class='btn btn-success' onclick='editar(this.parentNode.parentNode.rowIndex)'>Editar</button><button class='btn btn-danger' onclick=''>Excluir</button></td></tr>";
             document.getElementById("tabela").innerHTML = tabela;
         }
-    } 
+    }
 
+// FUNÇÃO PARA EDITAR NOME
+    function editar(i){
+        document.getElementById("nomeUser").value = dadosLista[(i - 1)];
+        dadosLista.splice(dadosLista[(i - 1)], 1);
+    }
 
